@@ -1,0 +1,230 @@
+/* young serif font-family: 'Young Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* outfit font-family: 'Outfit', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+    /* colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspbery: hsl(332, 51%, 32%);
+
+    /* neutral colors */
+    --white:  hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 90%);
+    --egghell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* font size */
+    --size: 16px;
+
+    /* font family */
+    --outfit: 'Outfit', sans-serif;
+    --young: 'Young Serif', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--egghell);
+    min-height: 100vh;
+    font-size: var(--size);
+}
+
+.main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px auto;
+    padding: 2.2em 2em;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.container {
+    width: 100%;
+}
+
+.container .ome-img{
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content h1 {
+    font-size: 33px;
+    font-family: var(--young);
+    font-weight: 400;
+    margin: 20px 0px;
+    opacity: 0.8;
+}
+
+.content .sub {
+    font-family: var(--young);
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/*'section preparacion / preparation */
+
+.preparation {
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: hsla(330, 100%, 90%, 0.2);
+    margin-top: 20px;
+}
+
+.preparation .title-pre {
+    color: var(--dark-raspbery);
+    font-size: 19px;
+    font-family: var(--outfit);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.preparation ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1.6;
+    font-family: var(--outfit);
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.preparation ul li span {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* title section */
+
+.title-sec {
+    font-size: 25px;
+    color: var(--nutmeg);
+    margin: 25px 0px;
+}
+
+/* ingredients and instructions */
+
+.hr {
+    opacity: 0.5;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.ingredientes ul {
+    padding-left: 20px;
+}
+
+.ingredientes ul li {
+    line-height: 1.8;
+    font-family: var(--outfit);
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+/* instructions */
+
+.ins ul {
+    list-style: decimal;
+    padding-left: 18px;
+}
+
+.ins ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: var(--outfit);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.ins ul li span {
+    font-weight: bold;
+}
+
+/* nutrition */
+
+.nutri {
+    width: 100%;
+}
+
+.nutri  .sub-title{
+    font-size: 14px;
+    font-family: var(--outfit);
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.nutri-list ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+    padding-left: 20px;
+    font-family: var(--outfit);
+    opacity: 0.8;
+}
+
+.nutri-list ul li span {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+.nutri-list li:last-child {
+    border-bottom: 0px;
+}
+
+
+.attribution {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (width < 450px) {
+    .main {
+        border-radius: 0px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .content .sub {
+        font-size: 14px;
+    }
+
+    .container .ome-img {
+        border-radius: 0px;
+    }
+
+    .content {
+        padding: 20px 30px;
+    }
+
+    .ingredientes {
+        padding: 0px 8px;
+    }
+
+    .ins, .nutri {
+        padding: 0px 35px;
+    }
+
+    .nutri .nutri-list ul li:last-child {
+        border-bottom: 0px;
+    }
+}
+
+
+
