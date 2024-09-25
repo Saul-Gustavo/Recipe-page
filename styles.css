@@ -193,6 +193,15 @@ body {
     padding: 10px;
 }
 
+.attribution a {
+    text-decoration: none;
+    color: black;
+}
+
+.attribution a:hover {
+    color: var(--dark-raspbery);
+}
+
 @media screen and (width < 450px) {
     .main {
         border-radius: 0px;
